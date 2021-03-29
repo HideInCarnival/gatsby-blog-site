@@ -1,0 +1,9 @@
+span.triangle {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  line-height: 2rem;
+  vertical-align: middle;
+  text-align: left;
+}
