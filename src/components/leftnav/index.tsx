@@ -48,8 +48,8 @@ export default function LeftNav({blog, setCurCol, increaseColCount, notIndex, cu
           </div>
         }
       </div>
-      <div id="left-nav" className="h-full xs:hidden">
-      <div className="leftnav-wrapper container h-full bg-gray-200 rounded-r relative">
+      <div id="left-nav" className="h-full xs:hidden pt-4 bg-gray-200">
+        <div className="leftnav-wrapper container h-full rounded-r relative">
         <div className="head">
           <Link to="/">
             <div className="avatar-wrapper text-center cursor-pointer" onClick={clickAvate}>
@@ -103,7 +103,7 @@ export default function LeftNav({blog, setCurCol, increaseColCount, notIndex, cu
           </div>
         </div>
       </div>
-    </div>
+      </div>
     </>
   )
 }

@@ -18,7 +18,7 @@ export default function MainContent({blogDetailArray, mdContent, clearColCount}:
           "最新文章"
         }
       </div>
-      <div className="article-table" style={{height: "calc(100% - 2rem)"}}>
+      <div className="article-table" style={{height: "calc(100% - 3rem)"}}>
         {
           mdContent ? <div className="h-full overflow-y-auto" dangerouslySetInnerHTML={{__html: mdContent.html}} /> :
           <ul className="list-disc pl-8 pt-4 h-full overflow-y-auto">
