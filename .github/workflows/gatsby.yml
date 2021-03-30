@@ -30,11 +30,11 @@ jobs:
         run: yarn build
       
       - name: Deploy files to server
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: 'root'
-          server: '${{ secrets.SERVER_IP }}'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} 
-          local_path: './public/*'
-          remote_path: '/www/blog/public'
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SOURCE: "public/"
+          REMOTE_HOST: "${{ secrets.SERVER_IP }}"
+          REMOTE_USER: "root"
+          TARGET: "/www/blog/public"
         
