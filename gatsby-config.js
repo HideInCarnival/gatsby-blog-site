@@ -8,11 +8,23 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      options: {
+        analyzerMode: 'server',
+        analyzerPort: 3001,
+        devMode: true,
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `columns`,
         path: `${__dirname}/columns`
       }
+    },
+    `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-zopfli`,
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
