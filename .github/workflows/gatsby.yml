@@ -33,7 +33,7 @@ jobs:
         uses: garygrossgarten/github-action-scp@release
         with:  
           local: 'public'
-          remote: '/www/blog'
+          remote: '/www/blog/public'
           host: ${{secrets.SERVER_IP}}
           username: ${{secrets.SSH_USER}}
           password: ${{secrets.PASSWORD}}
