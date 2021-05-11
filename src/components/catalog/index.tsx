@@ -24,7 +24,7 @@ export default function index({blogs}: props) {
           <ul className="article-catalog font-light text-center text-primary text-lg overflow-y-auto h-full">
             {
               blogs.map((item) => (
-                <Link key={item.node.id} to={`/${item.node.fields.relativeDirectory}/${item.node.id}`}>
+                <Link className="text-gray-900" key={item.node.id} to={`/${item.node.fields.relativeDirectory}/${item.node.id}`}>
                   <li key={item.node.id} className="py-2 text-left pl-3 overflow-x-hidden hover:underline">
                     {item.node.frontmatter.title}
                   </li>

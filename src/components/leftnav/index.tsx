@@ -18,7 +18,7 @@ interface props {
 export default function LeftNav({blog, setCurCol, increaseColCount, notIndex, curCol, isMobile, personalAddress}: props) {
   const clickAvate = () => {
     if (!notIndex) {
-      setCurCol('');
+      setCurCol && setCurCol('');
     }
   }
   return (
@@ -88,14 +88,14 @@ export default function LeftNav({blog, setCurCol, increaseColCount, notIndex, cu
         </div>
         <div className="contact h-16 grid grid-cols-2 absolute bottom-0 w-full border-t  border-gray-400">
           <div className="person h-full w-full flex justify-center items-center">
-            <Link to={personalAddress}>
+            <Link className="text-gray-900" to={personalAddress}>
             <svg className="icon" aria-hidden="true" style={{width: "2.5rem", height: "2.5rem"}}>
               <use xlinkHref="#icon-caidaniconwodehui"></use>
             </svg>
             </Link>
           </div>
           <div className="mail h-full w-full flex justify-center items-center">
-            <a href="mailto:bobblugo@gmail.com">
+            <a className="text-gray-900" href="mailto:bobblugo@gmail.com">
               <svg className="icon" aria-hidden="true" style={{width: "2.5rem", height: "2.5rem"}}>
                 <use xlinkHref="#icon-mail"></use>
               </svg>
