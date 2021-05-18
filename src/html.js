@@ -11,6 +11,14 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRGW76T34F"></script>
+        <script dangerouslySetInnerHTML={{__html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-QRGW76T34F');
+        `}}>
+        </script>
         {props.headComponents}
       </head>
       <script src="https://at.alicdn.com/t/font_2433643_3jdihp2pfeh.js"></script>
