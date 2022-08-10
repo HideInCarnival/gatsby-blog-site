@@ -42,7 +42,7 @@ module.exports = {
       const container = {
         ".container": {
           "width": "100%",
-          "max-width": "1440px"
+          "max-width": "2560px"
         },
         // BreakPoints
         "@screen sm": theme("screens.sm"),

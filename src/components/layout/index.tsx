@@ -12,7 +12,7 @@ type props = {
 }
 const Layout: React.FC<props> = ({children}) => {
   return (
-    <div className="layout mx-auto grid grid-cols-desk grid-rows-1 h-screen font-sans xs:block">
+    <div className="layout container mx-auto grid grid-cols-desk grid-rows-1 h-screen font-sans xs:block">
       { children }
     </div>
   )
