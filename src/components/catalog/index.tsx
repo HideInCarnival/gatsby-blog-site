@@ -10,10 +10,10 @@ export default function index({blogs}: props) {
     <div className="catalog h-full xs:hidden">
       <div className="target pt-4 text-primary font-normal text-center text-xl" style={{height: '6rem'}}>
         <p>
-          2022毕业目标:
+          有何胜利可言
         </p>
         <p>
-          Baolu
+          挺住就是一切
         </p>
       </div>
       <div className="catalog-wrapper"  style={{height: 'calc(100% - 6rempx'}}>
